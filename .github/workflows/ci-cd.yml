@@ -70,7 +70,7 @@ jobs:
               run: npm run test:integration -- --reporters="default" --reporters="jest-junit" || true
             - name: Store Test Results
               if: always() # Even if tests fail
-              uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # v3
+              uses: echapmanFromBunnings/upload-artifact@337a5a69b603f31f06936a711562a72b63b22151 # v3
               with:
                 name: test-output
                 path: ./test-results/* # Both unit and integration test results
